@@ -1,0 +1,143 @@
+$Cyan: hsl(179, 62%, 43%);
+$BrightYellow: hsl(71, 73%, 54%);
+$LightGray: hsl(204, 43%, 93%);
+$GrayishBlue: hsl(218, 22%, 67%);
+$font-family: 'Karla', sans-serif;
+
+$font-big: 1.5rem;
+$font-small: 1rem;
+
+$font-reg: 400;
+$font-bold:700;
+
+body {
+  font-family: $font-family;
+  font-size: $font-small;
+  background-color: $LightGray;
+}
+
+@media screen and (min-width: 375px) {
+  $font-big: 1rem;
+  $font-small: 0.968rem;
+}
+
+.main-container {
+  padding: 2rem 1rem;
+  .container{
+    padding: 1rem 1.5rem;
+    .first-1 {
+      font-size: $font-big;
+      font-weight: $font-bold;
+      color: $Cyan;
+    }
+
+    .first-2 {
+      color: $BrightYellow;
+      font-weight: $font-bold;
+    }
+
+    .first-3 {
+      color: $GrayishBlue;
+      opacity: 0.8;
+    }
+
+    .second-1 {
+      font-size: $font-big;
+      font-weight: $font-bold;
+    }
+
+    .second-2 {
+      display: flex;
+      align-items: center;
+      .dollar {
+        font-size: 2rem;
+        font-weight: $font-bold;
+      }
+      .per-month{
+        opacity: 0.5;
+        padding-left: 5px;
+      }
+    }
+
+    .second-3 {
+      opacity: 0.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .button-signup {
+      display: flex;
+      justify-content: center;
+      .button {
+        background-color: $BrightYellow;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        margin-bottom: 1rem;
+        .signup {
+          font-family: $font-family;
+          color: white;
+        }
+      }
+    }
+
+    .third-1 {
+      font-size: $font-big;
+      font-weight: $font-bold;
+      margin-top: 0;
+    }
+
+    .third-2 {
+      opacity: 0.6;
+      margin: 0;
+    }
+  }
+
+  .container:nth-child(1){
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+  }
+  .container:nth-child(2){
+    background-color: $Cyan;
+    color: white;
+  }
+  .container:nth-child(3){
+    background-color: $Cyan;
+    color: white;
+    opacity: 0.8;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-container{
+    padding: 100px 450px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    .container {
+      padding: 1rem 2rem;
+    }
+    .container:nth-child(1){
+      grid-column: span 2;
+    }
+    .container:nth-child(2){
+      background-color: $Cyan;
+      color: white;
+      border-radius: 0 0 0 10px;
+    }
+    .container:nth-child(3){
+      background-color: $Cyan;
+      color: white;
+      opacity: 0.6;
+      border-radius: 0 0 10px 0;
+      .third-1 {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
+
+// for attribution
+.attribution { font-size: 15px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

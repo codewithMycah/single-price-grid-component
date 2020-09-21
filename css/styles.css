@@ -1,0 +1,139 @@
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  background-color: #e5eff5;
+}
+
+.main-container {
+  padding: 2rem 1rem;
+}
+
+.main-container .container {
+  padding: 1rem 1.5rem;
+}
+
+.main-container .container .first-1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2ab2af;
+}
+
+.main-container .container .first-2 {
+  color: #c0df34;
+  font-weight: 700;
+}
+
+.main-container .container .first-3 {
+  color: #98a6bd;
+  opacity: 0.8;
+}
+
+.main-container .container .second-1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.main-container .container .second-2 {
+  display: flex;
+  align-items: center;
+}
+
+.main-container .container .second-2 .dollar {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.main-container .container .second-2 .per-month {
+  opacity: 0.5;
+  padding-left: 5px;
+}
+
+.main-container .container .second-3 {
+  opacity: 0.7;
+  margin-bottom: 1.5rem;
+}
+
+.main-container .container .button-signup {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container .container .button-signup .button {
+  background-color: #c0df34;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 1rem;
+}
+
+.main-container .container .button-signup .button .signup {
+  font-family: "Karla", sans-serif;
+  color: white;
+}
+
+.main-container .container .third-1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.main-container .container .third-2 {
+  opacity: 0.6;
+  margin: 0;
+}
+
+.main-container .container:nth-child(1) {
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.main-container .container:nth-child(2) {
+  background-color: #2ab2af;
+  color: white;
+}
+
+.main-container .container:nth-child(3) {
+  background-color: #2ab2af;
+  color: white;
+  opacity: 0.8;
+  border-radius: 0 0 10px 10px;
+}
+
+@media screen and (min-width: 1440px) {
+  .main-container {
+    padding: 100px 450px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+  }
+  .main-container .container {
+    padding: 1rem 2rem;
+  }
+  .main-container .container:nth-child(1) {
+    grid-column: span 2;
+  }
+  .main-container .container:nth-child(2) {
+    background-color: #2ab2af;
+    color: white;
+    border-radius: 0 0 0 10px;
+  }
+  .main-container .container:nth-child(3) {
+    background-color: #2ab2af;
+    color: white;
+    opacity: 0.6;
+    border-radius: 0 0 10px 0;
+  }
+  .main-container .container:nth-child(3) .third-1 {
+    margin-top: 1.5rem;
+  }
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
